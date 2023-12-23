@@ -52,3 +52,24 @@ function printAllPairs(n) {
   }
 }
 ```
+
+-------------------
+
+## Big O Shorthands
+
+- Analyzing complexity with big O can get complicated
+- There are several rules of thumb that can help
+- These rules won't ALWAYS wokr, but are a helpful starting point
+
+1. Arithmetic operations are constant
+2. Variable assignment is constant
+3. Accessing elements in an array (by index) or object (by key) is constant
+4. In a loop, the complexity is the length of the loop times complexity of whatever happens inside of the loop
+  
+```js
+function logAtLeast5(n) {
+  for (var i = 1; i <= Math.max(5, n); i++) {
+    console.log(i)
+  }
+}
+```
